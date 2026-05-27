@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar div</title>
+<style>
+  *{
+    margin: 0;
+    box-sizing: border-box; /* Evita que o padding quebre o layout */
+  }
+  
+  /* Layout Base */
+  .container {
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row;
+  }       
+
+  /* Estilos gerais para todas as caixas */
+  .container > div {
+      flex: 1;
+      margin: 20px;
+      padding: 15px;
+      color: white;
+      font-size: 18px;
+      border-radius: 15px;
+  }
+
+  
+  .container .div1 {
+      background-color: aqua;
+      color: black; 
+    
+  }
+
+  .container .div2 {
+      background-color: yellow;
+      color: black; 
+  }
+
+  .container .div3 { 
+      background-color: chartreuse;
+      color: black; 
+  }
+</style>
+        
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1     </div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+</html>

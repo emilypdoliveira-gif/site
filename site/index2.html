@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <style>
+
+
+  .navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: rgb(216, 182, 209);
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: rgb(27, 25, 25);
+}
+
+.navigation a:hover {
+  background: #ccd8e6;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+  .wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+ .banner{
+    background-color: rgb(0,0,0);
+
+    width: 1140px;
+    height: 350px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .contentsection{  background-color: rgb(0,0,0);
+
+    width: 1140px;
+    height: 350px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+
+
+    </style>
+</head>
+<body>
+    <ul class="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Sobre nos</a></li>
+    <li><a href="#">Serviços</a></li>
+    <li><a href="#">Contato</a></li>
+</ul>
+
+<div class="banner">
+    <h1> Meu banner de 1440px</h1>
+</div>
+
+
+<section class="contentsection">
+    <article>
+        <h2>Artigo Um</h2>
+        <p>Este e p primeiro artigo <strong>flex:1</strong>.Quando a tela ficar menor que 800px,eles vao empilhar</p>
+        
+    </article>
+
+    <article>
+        <h2>Artigo dois</h2>
+        <p>Este é o segundo artigo.o flexbox no container pai (section) garante que ambos os artigos independentes do tamanho do conteudo dentro deles</p>
+    </article>
+</section>
+
+</body>
+</html>
+
+
+
